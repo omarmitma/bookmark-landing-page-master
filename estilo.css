@@ -1,0 +1,845 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+}
+
+body nav {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body nav .linkNavDesktop {
+  display: none;
+}
+
+body nav .linkNavDesktop a {
+  margin: 15px;
+  text-decoration: none;
+  color: #000;
+}
+
+body nav .linkNavDesktop .loginA {
+  padding: 8px 25px;
+  background-color: #fa5757;
+  color: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 4px 8px 1px #e7ebf7;
+          box-shadow: 0px 4px 8px 1px #e7ebf7;
+  border: 2px solid #fa5757;
+}
+
+body nav .linkNavDesktop a:hover {
+  color: #fa5757;
+}
+
+body nav .linkNavDesktop .loginA:hover {
+  background-color: #fff;
+  color: #fa5757;
+}
+
+body nav .linkNavMobile {
+  display: block;
+}
+
+body nav .linkNavMobile button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+body nav .linkNavMobile .containerLinks {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(37, 43, 70, 0.92);
+  -webkit-transition: .7s;
+  transition: .7s;
+  z-index: 100;
+  padding: 20px;
+  margin-top: -300%;
+}
+
+body nav .linkNavMobile .containerLinks .divImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body nav .linkNavMobile .containerLinks .divImg button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+body nav .linkNavMobile .containerLinks .divLinks {
+  margin-top: 40px;
+}
+
+body nav .linkNavMobile .containerLinks .divLinks a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  width: 100%;
+  padding: 18px 0;
+  border-bottom: 1px solid #888;
+  text-align: center;
+}
+
+body nav .linkNavMobile .containerLinks .divLinks a:first-child {
+  border-top: 1px solid #888;
+}
+
+body nav .linkNavMobile .containerLinks .divLinks .loginA {
+  margin-top: 20px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  padding: 14px 0;
+}
+
+body nav .linkNavMobile .containerLinks .divIcons {
+  position: absolute;
+  bottom: 40px;
+  text-align: center;
+  width: 100%;
+}
+
+body nav .linkNavMobile .containerLinks .divIcons img {
+  margin: 0 20px;
+}
+
+body main {
+  color: #252b46;
+}
+
+body main .getBookmarkWrap {
+  display: -ms-grid;
+  display: grid;
+}
+
+body main .getBookmarkWrap .wrapText {
+  padding: 20px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main .getBookmarkWrap .wrapText h1 {
+  font-weight: 580;
+  font-size: 30px;
+}
+
+body main .getBookmarkWrap .wrapText p {
+  margin: 30px 0 50px 0;
+  font-size: 20px;
+}
+
+body main .getBookmarkWrap .wrapText .links a {
+  padding: 10px 12px;
+  background-color: #f7f7f7;
+  margin-right: 10px;
+  -webkit-box-shadow: 0px 4px 4px 1px #e7ebf7;
+          box-shadow: 0px 4px 4px 1px #e7ebf7;
+  text-decoration: none;
+  border-radius: 5px;
+  color: #000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border: 1px solid transparent;
+  -webkit-transition: .6s all;
+  transition: .6s all;
+}
+
+body main .getBookmarkWrap .wrapText .links a:first-child {
+  background-color: #5368df;
+  color: #fff;
+}
+
+body main .getBookmarkWrap .wrapText .links a:hover {
+  background-color: #fff;
+  border: 1px solid #383838;
+  color: #383838;
+}
+
+body main .getBookmarkWrap .wrapText .links a:first-child:hover {
+  color: #5368df;
+  border: 1px solid #5368df;
+}
+
+body main .getBookmarkWrap .wrapImg {
+  position: relative;
+}
+
+body main .getBookmarkWrap .wrapImg .bgImg {
+  position: absolute;
+  background: #5368df;
+  border-bottom-left-radius: 10rem;
+  width: calc(100% - 25vw);
+  height: calc(100% - 18vw);
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+body main .getBookmarkWrap .wrapImg img {
+  width: 100%;
+}
+
+body main .wrapFeatures {
+  text-align: center;
+  margin-top: 120px;
+}
+
+body main .wrapFeatures .featuresText {
+  text-align: center;
+}
+
+body main .wrapFeatures .featuresText h2 {
+  font-size: 30px;
+}
+
+body main .wrapFeatures .featuresText p {
+  margin-top: 30px;
+  width: 90%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: #555;
+}
+
+body main .wrapFeatures .featuresButton {
+  margin-top: 80px;
+}
+
+body main .wrapFeatures .featuresButton div {
+  display: -ms-grid;
+  display: grid;
+  border-bottom: 1px solid #aaa;
+}
+
+body main .wrapFeatures .featuresButton div button {
+  padding: 20px 0 20px 0;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-transition: .6s;
+  transition: .6s;
+  color: #555;
+  margin: auto;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: 100%;
+  border-bottom: 3px solid transparent;
+}
+
+body main .wrapFeatures .featuresButton div button:hover {
+  color: #fa5757;
+}
+
+body main .wrapFeatures .featuresButton div .activebtn {
+  border-bottom: 3px solid #fa5757;
+  color: #000;
+}
+
+body main .wrapFeatures .featuresButton div .activebtn:hover {
+  color: #111;
+  cursor: auto;
+}
+
+body main .wrapFeatures .featuresButton div:first-child {
+  border-top: 1px solid #aaa;
+}
+
+body main .wrapFeatures .featuresDivs .feature {
+  display: -ms-grid;
+  display: grid;
+  margin-top: 50px;
+}
+
+body main .wrapFeatures .featuresDivs .feature .divImg {
+  position: relative;
+}
+
+body main .wrapFeatures .featuresDivs .feature .divImg img {
+  position: relative;
+  padding: 0 0 40px 30px;
+  width: 90%;
+}
+
+body main .wrapFeatures .featuresDivs .feature .divImg .bgImg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: calc(100% - 20vw);
+  height: calc(100% - 18vw);
+  background: #5368df;
+  border-bottom-right-radius: 8rem;
+  z-index: -1;
+}
+
+body main .wrapFeatures .featuresDivs .feature .divText {
+  padding: 40px 20px;
+}
+
+body main .wrapFeatures .featuresDivs .feature .divText h2 {
+  font-size: 25px;
+}
+
+body main .wrapFeatures .featuresDivs .feature .divText p {
+  margin: 30px 0 40px 0;
+}
+
+body main .wrapFeatures .featuresDivs .feature .divText a {
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background: #5368df;
+  color: #fff;
+}
+
+body main .wrapFeatures .featuresDivs .feature .divText a:hover {
+  background: #3a4aa5;
+}
+
+body main .wrapFeatures .featuresDivs .feature1 {
+  display: -ms-grid;
+  display: grid;
+}
+
+body main .wrapFeatures .featuresDivs .feature2 {
+  display: none;
+}
+
+body main .wrapFeatures .featuresDivs .feature3 {
+  display: none;
+}
+
+body main .wrapDownlandExtension {
+  margin-top: 80px;
+}
+
+body main .wrapDownlandExtension .downlandExtensionText {
+  text-align: center;
+}
+
+body main .wrapDownlandExtension .downlandExtensionText h2 {
+  font-size: 30px;
+}
+
+body main .wrapDownlandExtension .downlandExtensionText p {
+  text-align: center;
+  margin-top: 20px;
+  width: 90%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: #555;
+}
+
+body main .wrapDownlandExtension .wrapDownland {
+  display: -ms-grid;
+  display: grid;
+  width: 90%;
+  margin: auto;
+}
+
+body main .wrapDownlandExtension .wrapDownland .Downland {
+  text-align: center;
+  -webkit-box-shadow: 0px 5px 9px 4px #e7ebf7;
+          box-shadow: 0px 5px 9px 4px #e7ebf7;
+  margin: 25px 15px 25px 15px;
+  padding-bottom: 30px;
+}
+
+body main .wrapDownlandExtension .wrapDownland .Downland img {
+  padding: 40px 0;
+}
+
+body main .wrapDownlandExtension .wrapDownland .Downland p {
+  margin-top: 20px;
+  color: #555;
+}
+
+body main .wrapDownlandExtension .wrapDownland .Downland .bgDots {
+  width: 100%;
+}
+
+body main .wrapDownlandExtension .wrapDownland .Downland a {
+  padding: 12px 15px;
+  background: #5368df;
+  margin-bottom: 30px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+body main .wrapDownlandExtension .wrapDownland .Downland a:hover {
+  background: #fff;
+  border: 1px solid #5368df;
+  color: #5368df;
+}
+
+body main .wrapFrequentlyQuestions {
+  margin-top: 120px;
+  text-align: center;
+}
+
+body main .wrapFrequentlyQuestions .wrapText h2 {
+  font-size: 30px;
+}
+
+body main .wrapFrequentlyQuestions .wrapText p {
+  width: 90%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: 30px;
+  color: #555;
+}
+
+body main .wrapFrequentlyQuestions .containerWrapQuestion {
+  text-align: left;
+  width: 95%;
+  margin: auto;
+  margin-top: 80px;
+  margin-bottom: 60px;
+}
+
+body main .wrapFrequentlyQuestions .containerWrapQuestion .WrapQuestion {
+  border-bottom: 1px solid #aaa;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body main .wrapFrequentlyQuestions .containerWrapQuestion .WrapQuestion .Question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 0 20px 2px;
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+}
+
+body main .wrapFrequentlyQuestions .containerWrapQuestion .WrapQuestion .Question .iconArrow {
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+body main .wrapFrequentlyQuestions .containerWrapQuestion .WrapQuestion .Answer {
+  height: 0;
+  color: transparent;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+body main .wrapFrequentlyQuestions .containerWrapQuestion .WrapQuestion:first-child {
+  border-top: 1px solid #aaa;
+}
+
+body main .wrapFrequentlyQuestions .containerWrapQuestion .activeQuestion .Question .iconArrow {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+body main .wrapFrequentlyQuestions .containerWrapQuestion .activeQuestion .Question .iconArrow svg path {
+  stroke: #fa5757;
+}
+
+body main .wrapFrequentlyQuestions .containerWrapQuestion .activeQuestion .Answer {
+  padding: 20px 0 20px 0;
+  height: auto;
+  color: #555;
+}
+
+body main .wrapFrequentlyQuestions a {
+  text-decoration: none;
+  background-color: #5368df;
+  color: #fff;
+  border-radius: 5px;
+  padding: 15px 25px;
+}
+
+body main .wrapFrequentlyQuestions a:hover {
+  background-color: #3a4aa5;
+}
+
+body footer {
+  margin-top: 180px;
+}
+
+body footer form {
+  background-color: #5368df;
+  text-align: center;
+  color: #fff;
+}
+
+body footer form .divText {
+  width: 90%;
+  margin: auto;
+  padding: 40px 0;
+}
+
+body footer form .divText h2 {
+  margin-top: 20px;
+}
+
+body footer form .divInputs {
+  padding: 0 0 40px 0;
+}
+
+body footer form .divInputs .inputandError {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  padding-bottom: 22px;
+}
+
+body footer form .divInputs .inputandError input[type=text] {
+  padding: 15px 18px;
+  outline: none;
+  border-radius: 4px;
+  border: none;
+  font-weight: 600;
+  min-width: 280px;
+  border: 2px solid transparent;
+}
+
+body footer form .divInputs .inputandError #message {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fa5757;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  font-size: 13px;
+  text-align: left;
+}
+
+body footer form .divInputs .inputandError input[type=text]::-webkit-input-placeholder {
+  color: #bbb;
+}
+
+body footer form .divInputs .inputandError input[type=text]:-ms-input-placeholder {
+  color: #bbb;
+}
+
+body footer form .divInputs .inputandError input[type=text]::-ms-input-placeholder {
+  color: #bbb;
+}
+
+body footer form .divInputs .inputandError input[type=text]::placeholder {
+  color: #bbb;
+}
+
+body footer form .divInputs .inputandError #iconError {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  display: none;
+}
+
+body footer form .divInputs input[type=submit] {
+  padding: 15px 18px;
+  border: none;
+  background: #fa5757;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 40px;
+  width: 280px;
+}
+
+body footer form .divInputs input[type=submit]:hover {
+  background: #d43f3f;
+}
+
+body footer .footerBottom {
+  background-color: #252b46;
+  padding: 25px 50px 10px 50px;
+}
+
+body footer .footerBottom .divLinks {
+  text-align: center;
+}
+
+body footer .footerBottom .divLinks .Links .diva a {
+  display: block;
+  text-decoration: none;
+  color: #ddd;
+  margin-right: 20px;
+  margin-top: 35px;
+}
+
+body footer .footerBottom .divLinks .Links .diva a:hover {
+  color: #fa5757;
+}
+
+body footer .footerBottom .divLinks .Icons {
+  margin-top: 35px;
+  margin-bottom: 10px;
+}
+
+body footer .footerBottom .divLinks .Icons a {
+  margin-right: 20px;
+}
+
+body footer .footerBottom .divLinks .Icons a:hover path {
+  fill: #fa5757;
+}
+
+body footer .footerBottom .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+body footer .footerBottom .attribution a {
+  color: #3e52a3;
+}
+
+@media (min-width: 912px) {
+  body nav {
+    padding: 20px 30px;
+  }
+  body nav .linkNavDesktop {
+    display: block;
+  }
+  body nav .linkNavMobile {
+    display: none;
+  }
+  body main .getBookmarkWrap {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    margin-top: 80px;
+    padding: 0 0 0 80px;
+  }
+  body main .getBookmarkWrap .wrapText {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    text-align: left;
+  }
+  body main .getBookmarkWrap .wrapText h1 {
+    font-size: 40px;
+  }
+  body main .getBookmarkWrap .wrapText .links a {
+    padding: 12px 18px;
+    margin-right: 20px;
+  }
+  body main .getBookmarkWrap .wrapImg {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+  body main .getBookmarkWrap .wrapImg .bgImg {
+    width: calc(100% - 13vw);
+    height: calc(100% - 10vw);
+  }
+  body main .wrapFeatures .featuresText p {
+    width: 35%;
+  }
+  body main .wrapFeatures .featuresButton {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin-bottom: 20px;
+  }
+  body main .wrapFeatures .featuresButton div {
+    border-bottom: 1px solid #ddd;
+  }
+  body main .wrapFeatures .featuresButton div button {
+    padding: 10px 20px;
+  }
+  body main .wrapFeatures .featuresButton div:first-child {
+    border-top: none;
+  }
+  body main .wrapFeatures .featuresDivs .feature {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  body main .wrapFeatures .featuresDivs .feature .divImg img {
+    padding: 0 0 40px 40px;
+    width: 100%;
+  }
+  body main .wrapFeatures .featuresDivs .feature .divImg .bgImg {
+    width: calc(100% - 13vw);
+    height: calc(100% - 10vw);
+  }
+  body main .wrapFeatures .featuresDivs .feature .divText {
+    text-align: left;
+    padding: 40px;
+  }
+  body main .wrapDownlandExtension {
+    margin-top: 180px;
+  }
+  body main .wrapDownlandExtension .downlandExtensionText h2 {
+    font-size: 30px;
+  }
+  body main .wrapDownlandExtension .downlandExtensionText p {
+    width: 35%;
+  }
+  body main .wrapDownlandExtension .wrapDownland {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    width: 75%;
+    margin: auto;
+    margin-top: 50px;
+  }
+  body main .wrapDownlandExtension .wrapDownland .Downland {
+    margin-top: 0;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  body main .wrapDownlandExtension .wrapDownland .Downland .bgDots {
+    width: 100%;
+  }
+  body main .wrapDownlandExtension .wrapDownland .Downland a {
+    padding: 15px 5%;
+    background: #5368df;
+    margin-bottom: 30px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+  }
+  body main .wrapDownlandExtension .wrapDownland .Downland:nth-child(2) {
+    margin-top: 30px;
+  }
+  body main .wrapDownlandExtension .wrapDownland .Downland:nth-child(3) {
+    margin-top: 60px;
+  }
+  body main .wrapFrequentlyQuestions .wrapText p {
+    width: 35%;
+  }
+  body main .wrapFrequentlyQuestions .containerWrapQuestion {
+    width: 38%;
+  }
+  body footer {
+    margin-top: 180px;
+  }
+  body footer form .divText {
+    width: 40%;
+    padding: 40px 0;
+  }
+  body footer form .divInputs input[type=submit] {
+    width: auto;
+    margin-left: 15px;
+  }
+  body footer .footerBottom {
+    padding: 25px 100px 10px 100px;
+  }
+  body footer .footerBottom .divLinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body footer .footerBottom .divLinks .Links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body footer .footerBottom .divLinks .Links .diva {
+    margin-left: 70px;
+  }
+  body footer .footerBottom .divLinks .Links .diva a {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin-right: 30px;
+    margin-top: 0;
+  }
+  body footer .footerBottom .divLinks .Icons {
+    margin-top: 0;
+  }
+  body footer .footerBottom .divLinks .Icons a {
+    margin-left: 0;
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: 1105px) {
+  body nav {
+    padding: 40px 80px;
+  }
+  body main .getBookmarkWrap .wrapText h1 {
+    font-size: 50px;
+  }
+  body main .wrapFeatures .featuresDivs .feature .divImg img {
+    padding: 0 0 80px 80px;
+  }
+  body main .wrapFeatures .featuresDivs .feature .divText {
+    padding: 80px 100px;
+  }
+  body main .wrapDownlandExtension .wrapDownland .Downland a {
+    padding: 16px 10%;
+  }
+  body footer {
+    margin-top: 180px;
+  }
+  body footer form .divText {
+    width: 25%;
+    padding: 40px 0;
+  }
+  body footer form .divInputs {
+    padding: 0 0 40px 0;
+  }
+  body footer .footerBottom {
+    padding: 25px 120px 10px 120px;
+  }
+  body footer .footerBottom .divLinks .Links .diva {
+    margin-left: 90px;
+  }
+  body footer .footerBottom .divLinks .Links .diva a {
+    margin-right: 45px;
+  }
+  body footer .footerBottom .divLinks .Icons a {
+    margin-right: 40px;
+  }
+}
+/*# sourceMappingURL=estilo.css.map */
